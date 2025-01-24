@@ -1,6 +1,6 @@
 {
   "name": "bootstrap5-windows98theme",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "This is a simple Windows 98 style theme for Bootstrap 5",
   "main": "index.html",
   "scripts": {
@@ -11,8 +11,8 @@
     "url": "git+https://github.com/Bloafer/bootstrap5-windows98theme.git"
   },
   "keywords": [
-    "Bootstrap",
-    "Laravel"
+    "Bootstrap 5",
+    "Laravel 11"
   ],
   "author": "Kerry James",
   "license": "MIT",
