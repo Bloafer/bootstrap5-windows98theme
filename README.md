@@ -1,5 +1,7 @@
 # Bootstrap 5 Window 98 theme
 
+[![Publish Package to npmjs](https://github.com/Bloafer/bootstrap5-windows98theme/actions/workflows/NPM.yml/badge.svg?event=release)](https://github.com/Bloafer/bootstrap5-windows98theme/actions/workflows/NPM.yml)
+
 This is a simple Windows 98 style theme for Bootstrap 5, just place the CSS file after the bootstrap CSS and you're good to go
 
 # Installation
