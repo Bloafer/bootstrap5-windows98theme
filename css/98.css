@@ -20,8 +20,8 @@
   --win-98-navmenu-highlight-color: #FFF;
   --win-98-navmenu-highlight-background: #000080;
 
---win-98-navmenu-sidebad-start: #0000FF;
---win-98-navmenu-sidebad-end: #000080;
+  --win-98-navmenu-sidebad-start: #0000FF;
+  --win-98-navmenu-sidebad-end: #000080;
 
   --win-98-bs-nav-link-padding-y: 0.2rem;
 }
@@ -79,10 +79,10 @@ body{
     border-style: solid;
     /*border-width: calc(var(--win-98-box-border-width) / 2);*/
     background-position: 3px 2px;
-      background-size: 10px 10px;
-  padding: calc(var(--win-98-box-border-width) * 2);
-  margin: var(--win-98-box-border-width);
-  opacity: revert;
+    background-size: 10px 10px;
+    padding: calc(var(--win-98-box-border-width) * 2);
+    margin: var(--win-98-box-border-width);
+    opacity: revert;
 }
 
 .navbar{
@@ -109,7 +109,7 @@ body{
     content: none;
 }
 .nav-link {
-  padding: var(--win-98-bs-nav-link-padding-y);
+    padding: var(--win-98-bs-nav-link-padding-y);
 }
 .dropdown-menu{
     border-top-style: solid;
@@ -135,7 +135,7 @@ body{
     position: absolute;
     bottom: -22px;
     left: 0px;
-    width: 100em;
+    width: 200px;
     background: radial-gradient(var(--win-98-navmenu-sidebad-start), var(--win-98-navmenu-sidebad-end));
     background-color: var(--win-98-navmenu-sidebad-end);
     font-weight: bold;
@@ -144,17 +144,17 @@ body{
     background-repeat: no-repeat;
 }
 .dropdown-divider {
-  height: 0;
-  margin: calc(var(--win-98-box-border-width) * 2);
-  overflow: hidden;
-  border-top: 1px solid var(--win-98-box-border-color-bottomright);
-  border-bottom: 1px solid var(--win-98-box-border-color-topleft);
-  opacity: 1;
+    height: 0;
+    margin: calc(var(--win-98-box-border-width) * 2);
+    overflow: hidden;
+    border-top: 1px solid var(--win-98-box-border-color-bottomright);
+    border-bottom: 1px solid var(--win-98-box-border-color-topleft);
+    opacity: 1;
 }
 
 .dropdown-item:focus, .dropdown-item:hover {
-  color: var(--win-98-navmenu-highlight-color);
-  background: var(--win-98-navmenu-highlight-background);
+    color: var(--win-98-navmenu-highlight-color);
+    background: var(--win-98-navmenu-highlight-background);
 }
 .btn:focus-visible,.btn-close:focus-visible {
     color: var(--win-98-btn-default-color);
@@ -188,8 +188,8 @@ body{
     opacity: revert;
 }
 .bg-body-tertiary {
-  --bs-bg-opacity: 1;
-  background-color: var(--win-98-box-background) !important;
+    --bs-bg-opacity: 1;
+    background-color: var(--win-98-box-background) !important;
 }
 .nav-tabs{
     border-bottom: var(--win-98-box-border-width) solid var(--win-98-box-border-color-topleft);
@@ -201,8 +201,6 @@ body{
     margin-top: calc(var(--win-98-box-border-width) * 2);
     color: #000;
 }
-
-
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{
     margin-top: 0;
     padding-bottom: calc(var(--win-98-box-border-width) + var(--win-98-bs-nav-link-padding-y));
@@ -221,29 +219,27 @@ body{
 }
 
 .dropdown-menu li {
-position: relative;
+    position: relative;
 }
 .dropdown-menu .dropdown-submenu {
-display: none;
-position: absolute;
-left: 100%;
-top: -7px;
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
 }
 .dropdown-menu .dropdown-submenu-left {
-right: 100%;
-left: auto;
+    right: 100%;
+    left: auto;
 }
 .dropdown-menu > li:hover > .dropdown-submenu {
-display: block;
+    display: block;
 }
-
 .tab-content{
     border-bottom: var(--win-98-box-border-width) solid var(--win-98-box-border-color-bottomright);
     border-left: var(--win-98-box-border-width) solid var(--win-98-box-border-color-topleft);
     border-right: var(--win-98-box-border-width) solid var(--win-98-box-border-color-bottomright);
     padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
 }
-
 .card{
     border-color: var(--win-98-box-border-color-topleft) var(--win-98-box-border-color-bottomright) var(--win-98-box-border-color-bottomright) var(--win-98-box-border-color-topleft);
     border-width: var(--win-98-box-border-width);
@@ -266,15 +262,12 @@ display: block;
     padding: var(--win-98-box-border-width);
     padding-left: calc(var(--win-98-box-border-width) * 2);
 }
-
 .card-text{
     border-color: var(--win-98-box-border-color-bottomright) var(--win-98-box-border-color-topleft) var(--win-98-box-border-color-topleft) var(--win-98-box-border-color-bottomright);
     border-width: var(--win-98-box-border-width);
     border-style: solid;
     padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
-
 }
-
 .card-footer{
     padding: 0 !important;
 }
