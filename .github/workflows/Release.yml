@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - main
+    inputs:
+      token: ${{ secrets.GH_TOKEN }}
 jobs:
   build:
     name: Release
@@ -15,8 +17,6 @@ jobs:
       - name: Release
         uses: SerenModz21/github-action-npm-release@master
         id: release
-        inputs:
-          token: ${{ secrets.GH_TOKEN }}
       - name: Print release output
         if: ${{ steps.release.outputs.released == 'true' }}
         run: echo Release ID ${{ steps.release.outputs.release_id }}
