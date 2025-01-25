@@ -22,7 +22,7 @@ npm install bootstrap5-windows98theme
 Add the following after Bootstrap CSS files in your pre-compiled CSS (`resources/css/app.css`)
 
 ```
-@import 'bootstrap5-windows98theme/css/98.css';
+@import 'bootstrap5-windows98theme/dist/css/98.css';
 ```
 
 Then just run `npm run build` assuming you're not doing live compiles in the background
