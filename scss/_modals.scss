@@ -1,0 +1,30 @@
+.modal-content{
+    border-color: var(--win-98-box-border-color-topleft) var(--win-98-box-border-color-bottomright) var(--win-98-box-border-color-bottomright) var(--win-98-box-border-color-topleft);
+    border-width: var(--win-98-box-border-width);
+    padding: var(--win-98-box-padding);
+    background: var(--win-98-box-background);
+    overflow: hidden;
+    border-radius: var(--win-98-box-radius);
+}
+
+.modal-header {
+    border-radius: var(--win-98-box-radius);
+    background: linear-gradient(90deg, var(--win-98-box-title-background-start), var(--win-98-box-title-background-end));
+    margin-bottom: var(--win-98-box-border-width);
+    color: var(--win-98-box-title-color);
+    display: block;
+    padding: var(--win-98-box-border-width);
+    padding-left: calc(var(--win-98-box-border-width) * 2);
+    border-bottom: 0px;
+}
+.modal-footer {
+    display: block;
+    text-align: center;
+    background-color: var(--win-98-box-background);
+    border-top: 0;
+    border-radius: var(--win-98-box-radius);
+}
+.modal-title {
+    margin-bottom: 0;
+    line-height: var(--bs-modal-title-line-height);
+}

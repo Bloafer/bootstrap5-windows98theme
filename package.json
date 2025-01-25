@@ -1,10 +1,21 @@
 {
   "name": "bootstrap5-windows98theme",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "This is a simple Windows 98 style theme for Bootstrap 5",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm-run-all --parallel watch docs-serve",
+    "css": "npm-run-all css-compile css-prefix css-rtl css-minify",
+    "css-compile": "sass --style expanded --source-map --embed-sources --no-error-css scss/:dist/css/",
+    "css-prefix": "npm-run-all --aggregate-output --parallel css-prefix-*",
+    "css-prefix-main": "postcss --config build/postcss.config.mjs --replace \"dist/css/*.css\" \"!dist/css/*.rtl*.css\" \"!dist/css/*.min.css\"",
+    "css-prefix-examples": "postcss --config build/postcss.config.mjs --replace \"site/content/**/*.css\"",
+    "css-prefix-examples-rtl": "cross-env-shell NODE_ENV=RTL postcss --config build/postcss.config.mjs --dir \"site/content/docs/$npm_package_config_version_short/examples/\" --ext \".rtl.css\" --base \"site/content/docs/$npm_package_config_version_short/examples/\" \"site/content/docs/$npm_package_config_version_short/examples/{blog,carousel,dashboard,cheatsheet}/*.css\" \"!site/content/docs/$npm_package_config_version_short/examples/{blog,carousel,dashboard,cheatsheet}/*.rtl.css\"",
+    "css-rtl": "cross-env NODE_ENV=RTL postcss --config build/postcss.config.mjs --dir \"dist/css\" --ext \".rtl.css\" \"dist/css/*.css\" \"!dist/css/*.min.css\" \"!dist/css/*.rtl.css\"",
+    "css-minify": "npm-run-all --aggregate-output --parallel css-minify-*",
+    "css-minify-main": "cleancss -O1 --format breakWith=lf --with-rebase --source-map --source-map-inline-sources --output dist/css/ --batch --batch-suffix \".min\" \"dist/css/*.css\" \"!dist/css/*.min.css\" \"!dist/css/*rtl*.css\"",
+    "css-minify-rtl": "cleancss -O1 --format breakWith=lf --with-rebase --source-map --source-map-inline-sources --output dist/css/ --batch --batch-suffix \".min\" \"dist/css/*rtl.css\" \"!dist/css/*.min.css\""
   },
   "repository": {
     "type": "git",
@@ -19,5 +30,12 @@
   "bugs": {
     "url": "https://github.com/Bloafer/bootstrap5-windows98theme/issues"
   },
-  "homepage": "https://github.com/Bloafer/bootstrap5-windows98theme#readme"
+  "homepage": "https://win98.example.bloafer.com/",
+  "sass": "scss/98.scss",
+  "style": "dist/css/98.css",
+  "files": [
+    "dist/css/*.{css,map}",
+    "scss/**/*.scss",
+    "!scss/tests/**"
+  ],
 }

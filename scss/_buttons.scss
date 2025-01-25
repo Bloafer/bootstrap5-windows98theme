@@ -1,0 +1,57 @@
+.btn,.btn:hover,.btn-close{
+    border-color: var(--win-98-box-border-color-topleft) var(--win-98-box-border-color-bottomright) var(--win-98-box-border-color-bottomright) var(--win-98-box-border-color-topleft);
+    border-width: var(--win-98-box-border-width);
+    border-radius: var(--win-98-box-radius);
+    background-color: var(--win-98-box-background);
+    color: var(--win-98-btn-default-color);
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+.btn-close, .modal-header .btn-close {
+    display: inline;
+    vertical-align: top;
+    width: 20px;
+    height: 18px;
+    box-sizing: inherit;
+    border-style: solid;
+    /*border-width: calc(var(--win-98-box-border-width) / 2);*/
+    background-position: 3px 2px;
+    background-size: 10px 10px;
+    padding: calc(var(--win-98-box-border-width) * 2);
+    margin: var(--win-98-box-border-width);
+    opacity: revert;
+}
+
+.btn:focus-visible,.btn-close:focus-visible {
+    color: var(--win-98-btn-default-color);
+    background-color: var(--win-98-box-background);
+    border-color: var(--win-98-box-border-color-topleft) var(--win-98-box-border-color-bottomright) var(--win-98-box-border-color-bottomright) var(--win-98-box-border-color-topleft);
+    outline: 0;
+    box-shadow: none;
+    outline: 1px dotted #000000;
+    outline-offset: calc((var(--win-98-box-border-width) * 2 + 1px) * -1);
+}
+.btn-check:checked + .btn:focus-visible, :not(.btn-check) + .btn:active:focus-visible, .btn:first-child:active:focus-visible, .btn.active:focus-visible, .btn.show:focus-visible,.btn-close:focus-visible{
+    box-shadow: none;
+}
+.btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show,.btn-close:active{
+    border-color: var(--win-98-box-border-color-bottomright) var(--win-98-box-border-color-topleft) var(--win-98-box-border-color-topleft) var(--win-98-box-border-color-bottomright);
+    background-color: var(--win-98-box-background);
+    color: var(--win-98-btn-default-color);
+    padding-top: calc(var(--bs-btn-padding-y) + var(--win-98-box-border-width));
+    padding-bottom: calc(var(--bs-btn-padding-y) - var(--win-98-box-border-width));
+    padding-left: calc(var(--bs-btn-padding-x) + var(--win-98-box-border-width));
+    padding-right: calc(var(--bs-btn-padding-x) - var(--win-98-box-border-width));
+
+}
+.btn:disabled, .btn.disabled, fieldset:disabled .btn{
+    border-color: var(--win-98-box-border-color-topleft) var(--win-98-box-border-color-bottomright) var(--win-98-box-border-color-bottomright) var(--win-98-box-border-color-topleft);
+    border-width: var(--win-98-box-border-width);
+    border-radius: var(--win-98-box-radius);
+    background-color: var(--win-98-box-background);
+    color: grey;
+    text-shadow: 1px 1px 0 #fff;
+    opacity: revert;
+}

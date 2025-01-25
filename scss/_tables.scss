@@ -1,0 +1,23 @@
+.table{
+    margin-bottom:0;
+}
+.table > :not(caption) > * > *{
+    padding: var(--win-98-box-border-width);
+}
+.table th{
+    box-shadow:
+        inset calc((var(--win-98-box-border-width) / 2) * -1) calc((var(--win-98-box-border-width) / 2) * -1) var(--win-98-box-border-color-bottomright),
+        inset calc(var(--win-98-box-border-width) / 2) calc(var(--win-98-box-border-width) / 2) var(--win-98-box-border-color-topleft),
+        inset calc(var(--win-98-box-border-width) * -1) calc(var(--win-98-box-border-width) * -1) var(--win-98-box-border-color-bottomright),
+        inset calc(var(--win-98-box-border-width)) calc(var(--win-98-box-border-width)) var(--win-98-box-border-color-topleft)
+    ;
+    background-color: var(--win-98-box-background);
+    color: var(--win-98-btn-default-color);
+    font-weight: normal;
+}
+.table-wrap{
+    border-color: var(--win-98-box-border-color-bottomright) var(--win-98-box-border-color-topleft) var(--win-98-box-border-color-topleft) var(--win-98-box-border-color-bottomright);
+    border-width: var(--win-98-box-border-width);
+    border-style: solid;
+    overflow:auto;
+}

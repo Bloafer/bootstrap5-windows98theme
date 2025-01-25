@@ -1,0 +1,106 @@
+.navbar{
+    padding: 0;
+    border-top-style: solid;
+    border-color: var(--win-98-box-border-color-topleft) var(--win-98-box-border-color-bottomright) var(--win-98-box-border-color-bottomright) var(--win-98-box-border-color-topleft);
+    border-width: var(--win-98-box-border-width);
+}
+.navbar .container-fluid{
+    padding: 2px;
+}
+.navbar.fixed-bottom .nav-link.dropdown-toggle{
+    padding: var(--win-98-bs-nav-link-padding-y);
+    padding-right: var(--bs-navbar-nav-link-padding-x);
+    padding-left: var(--bs-navbar-nav-link-padding-x);
+    border-style: solid;
+    border-color: var(--win-98-box-border-color-topleft) var(--win-98-box-border-color-bottomright) var(--win-98-box-border-color-bottomright) var(--win-98-box-border-color-topleft);
+    border-width: var(--win-98-box-border-width);
+    border-radius: var(--win-98-box-radius);
+    background-color: var(--win-98-box-background);
+    color: var(--win-98-btn-default-color);
+}
+.navbar.fixed-bottom .nav-link.dropdown-toggle:after{
+    content: none;
+}
+.nav-link {
+    padding: var(--win-98-bs-nav-link-padding-y);
+}
+.dropdown-menu{
+    border-top-style: solid;
+    border-color: var(--win-98-box-border-color-topleft) var(--win-98-box-border-color-bottomright) var(--win-98-box-border-color-bottomright) var(--win-98-box-border-color-topleft);
+    border-width: var(--win-98-box-border-width);
+    background-color: var(--win-98-box-background);
+    border-radius: var(--win-98-box-radius);
+}
+.dropup > .dropdown-menu{
+    padding-left: 25px;
+}
+.dropup > .dropdown-menu:before{
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+    content: "Bootstrap98";
+    padding-left: 10px;
+    color: var(--win-98-box-title-color);
+    position: absolute;
+    bottom: -22px;
+    left: 0px;
+    width: 200px;
+    background: radial-gradient(var(--win-98-navmenu-sidebad-start), var(--win-98-navmenu-sidebad-end));
+    background-color: var(--win-98-navmenu-sidebad-end);
+    font-weight: bold;
+    background-position: 20px 50%;
+    background-size: 120px 100%;
+    background-repeat: no-repeat;
+}
+.dropdown-divider {
+    height: 0;
+    margin: calc(var(--win-98-box-border-width) * 2);
+    overflow: hidden;
+    border-top: 1px solid var(--win-98-box-border-color-bottomright);
+    border-bottom: 1px solid var(--win-98-box-border-color-topleft);
+    opacity: 1;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: var(--win-98-navmenu-highlight-color);
+    background: var(--win-98-navmenu-highlight-background);
+}
+
+
+.dropdown-menu li {
+    position: relative;
+}
+.dropdown-menu .dropdown-submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+}
+.dropdown-menu .dropdown-submenu-left {
+    right: 100%;
+    left: auto;
+}
+.dropdown-menu > li:hover > .dropdown-submenu {
+    display: block;
+}
+.navbar .d-flex{
+    border-color: var(--win-98-box-border-color-bottomright) var(--win-98-box-border-color-topleft) var(--win-98-box-border-color-topleft) var(--win-98-box-border-color-bottomright);
+    border-width: calc(var(--win-98-box-border-width) / 2);
+    border-style: solid;
+}
+.navbar .d-flex{
+    padding: var(--win-98-bs-nav-link-padding-y);
+    padding-right: var(--bs-navbar-nav-link-padding-x);
+    padding-left: var(--bs-navbar-nav-link-padding-x);
+}
+.navbar .d-flex > a{
+    margin-right:3px;
+}
+.dropdown-item .bi-caret-right-fill{
+    position: absolute;
+    right: var(--win-98-box-border-width);
+    top: 0.5em;
+}

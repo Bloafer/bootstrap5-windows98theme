@@ -1,0 +1,9 @@
+body{
+    font-family: var(--win-98-body-font-family);
+}
+
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: var(--win-98-box-background) !important;
+}
