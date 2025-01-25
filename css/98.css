@@ -28,7 +28,6 @@
 
 
 body{
-    background-color: #008080;
     font-family: var(--win-98-body-font-family);
 }
 .table{
@@ -70,7 +69,7 @@ body{
     transition: none;
 }
 
-.btn-close {
+.btn-close, .modal-header .btn-close {
     display: inline;
     vertical-align: top;
     width: 20px;
@@ -240,7 +239,7 @@ body{
     border-right: var(--win-98-box-border-width) solid var(--win-98-box-border-color-bottomright);
     padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
 }
-.card{
+.card, .modal-content{
     border-color: var(--win-98-box-border-color-topleft) var(--win-98-box-border-color-bottomright) var(--win-98-box-border-color-bottomright) var(--win-98-box-border-color-topleft);
     border-width: var(--win-98-box-border-width);
     padding: var(--win-98-box-padding);
@@ -261,6 +260,27 @@ body{
     display: block;
     padding: var(--win-98-box-border-width);
     padding-left: calc(var(--win-98-box-border-width) * 2);
+}
+.modal-header {
+    border-radius: var(--win-98-box-radius);
+    background: linear-gradient(90deg, var(--win-98-box-title-background-start), var(--win-98-box-title-background-end));
+    margin-bottom: var(--win-98-box-border-width);
+    color: var(--win-98-box-title-color);
+    display: block;
+    padding: var(--win-98-box-border-width);
+    padding-left: calc(var(--win-98-box-border-width) * 2);
+    border-bottom: 0px;
+}
+.modal-footer {
+    display: block;
+    text-align: center;
+    background-color: var(--win-98-box-background);
+    border-top: 0;
+    border-radius: var(--win-98-box-radius);
+}
+.modal-title {
+    margin-bottom: 0;
+    line-height: var(--bs-modal-title-line-height);
 }
 .card-text{
     border-color: var(--win-98-box-border-color-bottomright) var(--win-98-box-border-color-topleft) var(--win-98-box-border-color-topleft) var(--win-98-box-border-color-bottomright);
