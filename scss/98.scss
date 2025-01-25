@@ -1,5 +1,5 @@
 @import "mixins/banner";
-@include winBanner("");
+@include winBanner("0.1.6");
 
 @import "root";
 @import "body";

@@ -19,11 +19,23 @@ npm install bootstrap5-windows98theme
 
 # Usage in Laravel 11 using Vite
 
+## Plain CSS
+
 Add the following after Bootstrap CSS files in your pre-compiled CSS (`resources/css/app.css`)
 
 ```
 @import 'bootstrap5-windows98theme/dist/css/98.css';
 ```
+
+## SASS
+
+Add the following after Bootstrap CSS files SASS file (`resources/scss/app.scss`)
+
+```
+@import 'bootstrap5-windows98theme/scss/98.scss';
+```
+
+## Finally
 
 Then just run `npm run build` assuming you're not doing live compiles in the background
 

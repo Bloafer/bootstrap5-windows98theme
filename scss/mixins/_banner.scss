@@ -1,6 +1,6 @@
-@mixin winBanner($file) {
+@mixin winBanner($version) {
   /*!
-   * Bootstrap #{$file} v0.1.6 (https://win98.example.bloafer.com/)
+   * Bootstrap 5 Window 98 theme v#{$version} (https://win98.example.bloafer.com/)
    * Copyright 2024 Bloafer Ltd
    * Licensed under MIT (https://github.com/Bloafer/bootstrap5-windows98theme/blob/main/LICENSE)
    */
