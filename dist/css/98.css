@@ -52,6 +52,7 @@ body {
   border-width: var(--win-98-box-border-width);
   border-style: solid;
   overflow: auto;
+  padding: 0 !important;
 }
 
 .btn, .btn:hover, .btn-close {
